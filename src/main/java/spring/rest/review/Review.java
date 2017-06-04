@@ -2,6 +2,7 @@ package spring.rest.review;
 
 import spring.core.BaseEntity;
 import spring.rest.course.Course;
+import spring.user.User;
 
 import javax.persistence.*;
 
@@ -12,6 +13,8 @@ public class Review extends BaseEntity{
     private String description;
     @ManyToOne
     private Course course;
+    @ManyToOne
+    private User reviewer;
 
     protected Review(){
         super();
@@ -25,6 +28,14 @@ public class Review extends BaseEntity{
 
     public Course getCourse() {
         return course;
+    }
+
+    public User getReviewer() {
+        return reviewer;
+    }
+
+    public void setReviewer(User reviewer) {
+        this.reviewer = reviewer;
     }
 
     public void setCourse(Course course) {

@@ -7,18 +7,23 @@ import org.springframework.stereotype.Component;
 import spring.rest.course.Course;
 import spring.rest.course.CourseRepository;
 import spring.rest.review.Review;
+import spring.user.User;
+import spring.user.UserRepository;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
 @Component
 public class DatabaseLoader implements ApplicationRunner {
     private final CourseRepository courses;
+    private final UserRepository users;
 
     @Autowired
-    public DatabaseLoader(CourseRepository courses) {
+    public DatabaseLoader(CourseRepository courses, UserRepository users) {
         this.courses = courses;
+        this.users = users;
     }
 
 
@@ -40,6 +45,25 @@ public class DatabaseLoader implements ApplicationRunner {
                 "Groovy",
                 "Hibernate"
         };
+
+        List<User> students = Arrays.asList(
+                new User("jacobproffer", "Jacob",  "Proffer", "password", new String[] {"ROLE_USER"}),
+                new User("mlnorman", "Mike",  "Norman", "password", new String[] {"ROLE_USER"}),
+                new User("k_freemansmith", "Karen",  "Freeman-Smith", "password", new String[] {"ROLE_USER"}),
+                new User("seth_lk", "Seth",  "Kroger", "password", new String[] {"ROLE_USER"}),
+                new User("mrstreetgrid", "Java",  "Vince", "password", new String[] {"ROLE_USER"}),
+                new User("anthonymikhail", "Tony",  "Mikhail", "password", new String[] {"ROLE_USER"}),
+                new User("boog690", "AJ",  "Teacher", "password", new String[] {"ROLE_USER"}),
+                new User("faelor", "Erik",  "Faelor Shafer", "password", new String[] {"ROLE_USER"}),
+                new User("christophernowack", "Christopher",  "Nowack", "password", new String[] {"ROLE_USER"}),
+                new User("calebkleveter", "Caleb",  "Kleveter", "password", new String[] {"ROLE_USER"}),
+                new User("richdonellan", "Rich",  "Donnellan", "password", new String[] {"ROLE_USER"}),
+                new User("albertqerimi", "Albert",  "Qerimi", "password", new String[] {"ROLE_USER"})
+        );
+
+        users.save(students);
+        users.save(new User("guazi","Ryan","Meng", "123321",new String[]{"ROLE_USER","ROLE_ADMIN"}));
+
         List<Course> manyCourses= new ArrayList<>();
         IntStream.range(0, 100)
                 .forEach(i ->{
@@ -48,7 +72,9 @@ public class DatabaseLoader implements ApplicationRunner {
                     String title = String.format(temp,buzz);
 
                     Course c = new Course(title,"https://nba.hupu.com/");
-                    c.addReview(new Review(i%5,String.format("Moar %s please!",buzz)));
+                    Review review = new Review(i % 5, String.format("Moar %s please!", buzz));
+                    review.setReviewer(students.get(i%students.size()));
+                    c.addReview(review);
                     manyCourses.add(c);
                 });
          courses.save(manyCourses);
