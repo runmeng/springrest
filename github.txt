@@ -1,0 +1,28 @@
+say-hello inanzzz$ git init
+say-hello inanzzz$ git add --all
+say-hello inanzzz$ git commit -m 'First commit'
+say-hello inanzzz$ git remote add origin git@github.com:runmeng/say-hello.git
+say-hello inanzzz$ git push -u origin master
+
+
+
+git clone https://github.com/runmeng/JMSTranslationBundle
+git status
+git add Translation/Updater.php
+git commit -m 'update timestamp'
+git push
+
+git clone <github repo 路径>
+修改文件
+git status 
+git add <修改过的文件名>
+git commit -m '说明(字符串)'
+git push
+然后到github网站，pull request
+
+update changes
+
+git add .
+git commit -m "Add existing file"
+git push origin your-branch(master)
+

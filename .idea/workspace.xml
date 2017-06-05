@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="460b6f54-6fe9-4989-be72-8c11ba695891" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/spring/core/BaseEntity.class" afterPath="$PROJECT_DIR$/build/classes/main/spring/core/BaseEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/spring/rest/course/Course.class" afterPath="$PROJECT_DIR$/build/classes/main/spring/rest/course/Course.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/spring/rest/course/CourseRepository.class" afterPath="$PROJECT_DIR$/build/classes/main/spring/rest/course/CourseRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/main/spring/rest/review/ReviewRepository.class" afterPath="$PROJECT_DIR$/build/classes/main/spring/rest/review/ReviewRepository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/course-reviews-api_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/course-reviews-api_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/course-reviews-api_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/course-reviews-api_test.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/core/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/spring/core/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/core/DatabaseLoader.java" afterPath="$PROJECT_DIR$/src/main/java/spring/core/DatabaseLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/rest/course/Course.java" afterPath="$PROJECT_DIR$/src/main/java/spring/rest/course/Course.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/rest/course/CourseRepository.java" afterPath="$PROJECT_DIR$/src/main/java/spring/rest/course/CourseRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/rest/review/Review.java" afterPath="$PROJECT_DIR$/src/main/java/spring/rest/review/Review.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/spring/rest/review/ReviewRepository.java" afterPath="$PROJECT_DIR$/src/main/java/spring/rest/review/ReviewRepository.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
